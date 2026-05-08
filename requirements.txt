@@ -1,0 +1,26 @@
+# Core Deep Learning
+keras>=3.0.0
+torch
+torchvision
+torchaudio
+tensorflow  # Still needed for some Keras data utilities
+
+# Computer Vision & Image Processing
+opencv-python
+pillow
+matplotlib
+seaborn
+
+# Data Science & Analytics
+numpy
+pandas
+scikit-learn
+
+# Deployment & Interface
+streamlit
+watchdog  # Performance for streamlit
+
+# Environment & Notebooks
+jupyter
+ipython
+python-dotenv

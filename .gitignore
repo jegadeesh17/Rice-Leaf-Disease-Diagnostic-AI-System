@@ -1,0 +1,42 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Keras & Deep Learning
+models/*.keras
+models/*.h5
+*.weights.h5
+logs/
+events.out.tfevents.*
+
+# Data & Large Files
+data/
+!data/.gitkeep
+*.zip
+*.tar.gz
+*.csv
+
+# Visualizations & Reports
+visualizations/*.png
+visualizations/*.jpg
+reports/*.pdf
+
+# Environments & OS
+venv/
+env/
+.env
+.venv
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+.gemini/
