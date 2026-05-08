@@ -24,8 +24,10 @@ data/
 *.csv
 
 # Visualizations & Reports
-visualizations/*.png
-visualizations/*.jpg
+# (Allowing these to be pushed for the README)
+!visualizations/
+# visualizations/*.png
+# visualizations/*.jpg
 reports/*.pdf
 
 # Environments & OS
