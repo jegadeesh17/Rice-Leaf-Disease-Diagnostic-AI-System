@@ -23,7 +23,7 @@ The system leverages convolutional neural networks (CNNs), image preprocessing p
 
 ### **Dataset**
 
-* **Source:** Rice Leaf Disease Image Dataset
+* **Source:** Rice Leaf Disease Image Dataset-"sethy, prabira Kumar (2020), “Rice Leaf Disease Image Samples”, Mendeley Data, V1, doi: 10.17632/fwcj7stb8r.1"
 * **Domain:** Agricultural Computer Vision
 * **Data Type:** Labeled rice leaf images
 
