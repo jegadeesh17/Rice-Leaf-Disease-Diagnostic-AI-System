@@ -182,7 +182,7 @@ The system enables:
 ### **1. Clone Repository**
 
 ```bash
-git clone https://github.com/yourusername/AI-System-for-Rice-Leaf.git
+git clone https://github.com/yourusername/Rice-Leaf-Disease-Diagnostic-AI-System.git
 
 cd AI-System-for-Rice-Leaf
 ```
