@@ -17,7 +17,9 @@ The system leverages convolutional neural networks (CNNs), image preprocessing p
 * **Deep Learning Classification:** Uses CNN-based architectures for multiclass disease prediction.
 * **Automated Feature Learning:** Extracts disease patterns directly from rice leaf images.
 * **Model Evaluation & Analytics:** Tracks model accuracy, loss, precision, recall, and confusion matrices.
-* **Scalable Agricultural AI System:** Designed for future deployment in mobile or web-based crop monitoring applications.
+* **Interactive Streamlit Web App:** Deployed application for uploading images and getting real-time predictions.
+* **Transfer Learning Architectures:** Supports advanced models like MobileNetV2 and EfficientNetB0 for high accuracy.
+* **Model Explainability (Grad-CAM):** Visualizes the regions of interest in the leaf that triggered the disease prediction.
 
 ---
 
@@ -55,10 +57,11 @@ AI-System-for-Rice-Leaf/
 ├── outputs/                      # Predictions and evaluation outputs
 ├── visualizations/               # Accuracy plots and confusion matrices
 ├── src/
-│   ├── preprocessing.py          # Image preprocessing pipeline
-│   ├── augmentation.py           # Data augmentation scripts
-│   ├── training.py               # Model training pipeline
-│   └── evaluation.py             # Evaluation and metrics scripts
+│   ├── data_loader.py            # Data loading and preprocessing pipeline
+│   ├── model_builder.py          # Deep learning model architectures (CNN, MobileNet, EfficientNet)
+│   ├── interpretability.py       # Grad-CAM explainability scripts
+│   ├── evaluation.py             # Evaluation and metrics scripts
+│   └── streamlit_app.py          # Interactive Streamlit dashboard application
 │
 ├── rice_leaf_ai_system.ipynb     # Main end-to-end notebook
 ├── requirements.txt              # Python dependencies
@@ -250,8 +253,6 @@ A smart agriculture platform can use this system to:
 ### **Future Improvements**
 
 * Mobile app deployment for farmers
-* Real-time disease prediction system
-* Transfer learning using ResNet/EfficientNet
 * Cloud-based agricultural monitoring dashboard
 * Integration with fertilizer and treatment recommendation systems
 
