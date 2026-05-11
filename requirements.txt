@@ -6,7 +6,7 @@ torchaudio
 tensorflow  # Still needed for some Keras data utilities
 
 # Computer Vision & Image Processing
-opencv-python
+opencv-python-headless
 pillow
 matplotlib
 seaborn
