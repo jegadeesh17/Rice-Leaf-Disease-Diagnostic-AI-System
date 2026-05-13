@@ -248,25 +248,19 @@ def overlay_heatmap(image, heatmap, alpha=0.4):
     return superimposed_img.astype("uint8")
 
 def compile_report_buffer(diag_class, conf_score, latency, protocol):
-    """Compiles formatted diagnostic output text suitable for dynamic file saving."""
-    content = f"""====================================================
-🌾 INSTITUTIONAL RICE LEAF DISEASE DIAGNOSTIC REPORT
-====================================================
-Issued Timestamp  : {time.strftime('%Y-%m-%d %H:%M:%S')}
-Execution Backend : Keras 3 Multi-Backend Graph Engine
+    """Compiles concise diagnostic summary report buffer."""
+    content = f"""🌾 Diagnostic Report
+Date: {time.strftime('%Y-%m-%d %H:%M:%S')}
 
-[ DIAGNOSTIC DISCOVERY ]
-Pathogen Identity      : {class_display_names[diag_class]}
-Classification Score   : {conf_score*100:.2f}%
-Compute Processing Overhead : {latency:.1f} ms
+Condition : {class_display_names[diag_class]}
+Confidence: {conf_score*100:.1f}%
+Latency   : {latency:.1f} ms
 
-[ TAILORED REMEDIATION PROTOCOL ]
+Recommended Actions:
 {protocol}
 
-====================================================
-Locally Compiled System Record. Data persists fully in local SQLite storage.
-Zero cloud dependencies required.
-====================================================
+---
+Generated via AI Diagnostics Pipeline
 """
     return content.encode('utf-8')
 
